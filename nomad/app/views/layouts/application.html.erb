@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Nomad</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>W4d1</title>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
 
-<%= yield %>
+	<body>
+		<% if current_user %>
+			<header>
+				<p>Signed in as <%= current_user.username %></p>
+				<%= link_to "Logout", logout_path %>
+			</header>
+		<% end %>
 
-</body>
+		<%= yield %>
+
+	</body>
 </html>

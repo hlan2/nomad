@@ -1,7 +1,11 @@
 class UsersController < ApplicationController
 	def new
-		@user = User.new
+		if current_user
+			redirect_to root_path
+		else
+			@user = User.new
 	 #render 'new.html.erb'
+		end
 	end
 
 	def create
@@ -12,7 +16,7 @@ class UsersController < ApplicationController
 		redirect_to root_path
 
 		else
-		render :new
+			render :new
 		end
 	end
 
