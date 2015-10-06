@@ -1,7 +1,10 @@
 <h1>List of Available Tours</h1>
 <% @tours.each do |tour| %>
-<%= tour.tour_name %>
+
+<div><%= tour.tour_name %>: 	
 <%= tour.tour_description %>
+</div>
+
 <% end %>
 
 <%= form_tag(tours_path, :method => "get", id: "search-form") do %>

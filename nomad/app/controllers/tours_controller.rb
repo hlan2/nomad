@@ -1,6 +1,6 @@
 class ToursController < ApplicationController
   def index
-    @tours = Tour.all
+    #@tours = Tour.all
   		if params[:search]
     		@tours = Tour.search(params[:search]).order("created_at DESC")
   		else
