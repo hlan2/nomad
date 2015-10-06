@@ -1,4 +1,18 @@
 <h1>List of Available Tours</h1>
 <% @tours.each do |tour| %>
 <%= tour.tour_name %>
+<%= tour.tour_description %>
 <% end %>
+
+<%= form_tag(tours_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Tours" %>
+<%= submit_tag "Search" %>
+<% end %>
+
+<%= link_to "Back to all tours", tours_path %>
+<% if @tours.present? %>
+  <%= render @tours %>
+<% else %>
+  <p>There are no tours containing the term(s) <%= params[:search] %>.</p>
+<% end %>
+
