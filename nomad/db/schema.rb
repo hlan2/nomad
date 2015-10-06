@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151005213058) do
+ActiveRecord::Schema.define(version: 20151006192648) do
 
   create_table "messages", force: :cascade do |t|
     t.integer  "sender_id"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20151005213058) do
 
   create_table "reviews", force: :cascade do |t|
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "updated_up", null: false
     t.string   "title"
     t.string   "body"
     t.integer  "user_id"
@@ -33,15 +33,15 @@ ActiveRecord::Schema.define(version: 20151005213058) do
   create_table "tours", force: :cascade do |t|
     t.string   "tour_name"
     t.string   "tour_description"
+    t.integer  "user_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
-    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "email"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "email"
     t.string   "password_digest"
     t.string   "firstname"
     t.string   "lastname"
