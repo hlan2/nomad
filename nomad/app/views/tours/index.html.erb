@@ -1,4 +1,11 @@
 <h1>List of Available Tours</h1>
+
+<%= form_tag(tours_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Tours" %>
+<%= submit_tag "Search" %>
+<% end %>
+
+
 <% @tours.each do |tour| %>
 
 <div><%= tour.tour_name %>: 	
@@ -7,10 +14,7 @@
 
 <% end %>
 
-<%= form_tag(tours_path, :method => "get", id: "search-form") do %>
-<%= text_field_tag :search, params[:search], placeholder: "Search Tours" %>
-<%= submit_tag "Search" %>
-<% end %>
+
 
 <%= link_to "Back to all tours", tours_path %>
 <% if @tours.present? %>
