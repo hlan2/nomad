@@ -21,8 +21,8 @@ end
 	
 	def create
 		@user = User.create(user_params)
-
 		if @user
+
 
 		redirect_to login_path
 

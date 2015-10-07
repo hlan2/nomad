@@ -6,7 +6,7 @@ Name: <%= current_user.firstname%> <%=current_user.lastname%>
 <h1>All Users</h1>
 
 <% @users.each do |user|%>
-<div><%= user.firstname%> <%=user.lastname%>  <%=link_to "<Message User>", new_message_path(user.firstname)%></div> 
+<div><%= user.firstname%> <%=user.lastname%>  <%=link_to "<Message User>", new_message_path(user.id)%></div> 
 <%end%>
 
 
