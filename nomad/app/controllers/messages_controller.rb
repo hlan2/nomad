@@ -1,7 +1,7 @@
 class MessagesController < ApplicationController
 def index
     @messages = Message.all
-    current_user = User.find_by(id: params[:id])
+    #current_user = User.find_by(id: params[:id])
   end
 
   def show
@@ -9,7 +9,7 @@ def index
   end
   
   def new
-  	#@message = Message.new
+  	@message = Message.new
   end
 
   def create

@@ -1,0 +1,11 @@
+<h1>Send a message</h1>
+
+<%= form_for @message do |f| %>
+  <p>
+    <%= f.label :message %><br>
+    <%= f.text_area :message %>
+  </p>
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>
