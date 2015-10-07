@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
   
   resources :messages
-  resources :users
+  resources :users do
+    resources :received_messages, except: %i(index edit show update destroy)
+  end
   resources :sessions, only: [:new, :create, :destroy]
   resources :tours
 

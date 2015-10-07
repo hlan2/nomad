@@ -2,7 +2,7 @@
 
 <% @messages.each do |x| %>
 <% if(x.recipient_id == current_user.id)%>
-<div><%= x.message%> Sent from user: <%=x.sender_id%></div>
+<div><%= x.message%> Sent from user: <%=x.sender_id %></div>
 	<%end%>
 <%end%>
 
