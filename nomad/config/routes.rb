@@ -5,10 +5,12 @@ Rails.application.routes.draw do
 
   get '/login' => 'sessions#new'
   get '/logout' => 'sessions#destroy'
+  
+  resources :messages
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   resources :tours
-  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
