@@ -1,8 +1,10 @@
 <h1>Your mailbox </h1>
 
 <% @messages.each do |x| %>
-<% if(x.firstname_id == current_user.id)%>
-<div><%= x.message%> Sent from user: <%=x.sender_id %></div>
+<% if(x.recipient_id == current_user.id)%>
+<div><%= x.message%> Sent from user: <%=x.sender.firstname %></div>
+
+
 	<%end%>
 <%end%>
 
