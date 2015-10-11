@@ -11,7 +11,7 @@ class ToursController < ApplicationController
   def show
   	@tour = Tour.find(params[:id])
   end
-  
+
   def new
   	@tour = Tour.new
   end
@@ -27,6 +27,6 @@ class ToursController < ApplicationController
 
   private
   def tour_params
-  	params.require(:tour).permit(:tour_name, :tour_description)
+  	params.require(:tour).permit(:tour_name, :tour_description, :address)
   end
  end
