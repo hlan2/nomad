@@ -2,19 +2,20 @@ class ReviewsController < ApplicationController
   before_action :load_tour
 
   def index
-    #@review = Review.all
-      # if params[:search]
-      #   @review = Review.search(params[:search]).order("created_at DESC")
-      # else
-      @reviews = Review.all.order('created_at DESC')
+      tour = Tour.find(params[:tour_id])
+      @reviews = tour.reviews.order(created_at: :desc)
 
-  end
+      #@reviews = Tour.Review.all.order('created_at DESC')#.find(params[:tour_id])
+      #@review = Review.find(params[:id])
 
-  def show
-    @review = Review.find(params[:id])
   end
 
   def new
+    @tour = Tour.find(params[:tour_id])
+    #@id = tour_id.user_id
+
+
+
     @review = Review.new
   end
 
