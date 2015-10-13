@@ -8,8 +8,8 @@
 
 <% @tours.each do |tour| %>
 
-<div><%= tour.tour_name %>: 	
-<%= tour.tour_description %>
+<div>
+  <%= link_to tour.tour_name, tour_path(tour) %>
 </div>
 
 
