@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151014155058) do
+ActiveRecord::Schema.define(version: 20151014200137) do
 
   create_table "messages", force: :cascade do |t|
     t.integer  "sender_id"
@@ -40,9 +40,9 @@ ActiveRecord::Schema.define(version: 20151014155058) do
     t.float    "latitude"
     t.float    "longitude"
     t.string   "address"
-    t.string   "city"
     t.boolean  "dog_friendly"
     t.boolean  "family_friendly"
+    t.string   "city"
   end
 
   create_table "users", force: :cascade do |t|
