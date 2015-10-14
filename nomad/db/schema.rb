@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151010195507) do
+ActiveRecord::Schema.define(version: 20151014155058) do
 
   create_table "messages", force: :cascade do |t|
     t.integer  "sender_id"
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 20151010195507) do
     t.float    "longitude"
     t.string   "address"
     t.string   "city"
+    t.boolean  "dog_friendly"
+    t.boolean  "family_friendly"
   end
 
   create_table "users", force: :cascade do |t|
@@ -50,9 +52,6 @@ ActiveRecord::Schema.define(version: 20151010195507) do
     t.string   "password_digest"
     t.string   "firstname"
     t.string   "lastname"
-    t.boolean "dog_friendly"
-    t.boolean "family_friendly"
-    t.boolean "adults_only"
   end
 
 end
