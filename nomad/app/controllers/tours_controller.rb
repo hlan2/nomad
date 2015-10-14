@@ -14,6 +14,8 @@ class ToursController < ApplicationController
 
   def show
   	@tour = Tour.find(params[:id])
+    @reviews = @tour.reviews
+    #@reviews = Review.all.order('created_at DESC')
   end
 
   def new
