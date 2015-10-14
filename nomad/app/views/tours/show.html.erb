@@ -8,4 +8,9 @@
 <h1> Reviews </h1>
 <% @reviews.each do |review| %>
 <div><%= review.title %></div>
+<% review.rating.times do %>
+<%= image_tag "http://findicons.com/files/icons/2166/oxygen/48/rating.png"%>
 <% end %>
+<% end %>
+
+
