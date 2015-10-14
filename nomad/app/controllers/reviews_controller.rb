@@ -14,8 +14,6 @@ class ReviewsController < ApplicationController
     @tour = Tour.find(params[:tour_id])
     #@id = tour_id.user_id
 
-
-
     @review = Review.new
   end
 
