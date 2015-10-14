@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20151010195507) do
     t.float    "latitude"
     t.float    "longitude"
     t.string   "address"
+    t.string   "city"
   end
 
   create_table "users", force: :cascade do |t|
@@ -49,6 +50,9 @@ ActiveRecord::Schema.define(version: 20151010195507) do
     t.string   "password_digest"
     t.string   "firstname"
     t.string   "lastname"
+    t.boolean "dog_friendly"
+    t.boolean "family_friendly"
+    t.boolean "adults_only"
   end
 
 end

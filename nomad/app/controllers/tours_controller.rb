@@ -1,10 +1,10 @@
 class ToursController < ApplicationController
-  
+
   before_action :authenticate, only: [:create]
 
   def index
     #@tours = Tour.all
-      
+
   		if params[:search]
     		@tours = Tour.search(params[:search]).order("created_at DESC")
   		else
@@ -32,6 +32,6 @@ class ToursController < ApplicationController
 
   private
   def tour_params
-  	params.require(:tour).permit(:tour_name, :tour_description, :address)
+  	params.require(:tour).permit(:tour_name, :tour_description, :address, :city)
   end
  end

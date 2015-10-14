@@ -1,4 +1,4 @@
-<h1>Add a Tour</h1>
+<h1>Create New Tour</h1>
 
 <%= form_for @tour do |f| %>
   <p>
@@ -13,9 +13,19 @@
     <%= f.label :address %><br>
     <%= f.text_field :address %>
   </p>
-    <p>
-   <%= f.submit "Save" %>
+ <p>
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </p>
+  <p>
+  <%= f.check_box :dog_friendly %>
+  <%= f.label :dog_friendly, "Dog friendly tour" %>
+  <%= f.check_box :family_friendly %>
+  <%= f.label :family_friendly, "Family friendly tour" %>
+  <%= f.check_box :adults_only %>
+  <%= f.label :adults_only, "Adults only tour" %>
+  </p>
+  <p>
+   <%= f.submit "Create" %>
   </p>
   <% end %>
-
-
