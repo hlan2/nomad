@@ -1,0 +1,24 @@
+<%= form_tag sessions_path do %>
+<h1> Welcome to Nomad </h1>
+
+ <h3> Click below to Sign Up (first time users) </h3>
+
+ 	<%= link_to "Sign Up", new_user_path %>
+
+<h3> Please Login Below (for exisiting users): </h3>
+
+ <div class="field">
+ 	<%= label_tag :email %>
+ 	<%= text_field_tag :email %>
+ </div>
+
+<div class="field">
+ 	<%= label_tag :password %>
+ 	<%= password_field_tag :password %>
+ </div>
+
+ <%= submit_tag %>
+
+
+
+<% end %>

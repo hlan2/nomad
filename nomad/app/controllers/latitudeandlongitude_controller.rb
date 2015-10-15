@@ -1,0 +1,2 @@
+class LatitudeandlongitudeController < ApplicationController
+end
