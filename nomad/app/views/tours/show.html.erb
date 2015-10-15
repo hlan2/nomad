@@ -1,6 +1,12 @@
 <h1><%= @tour.tour_name %></h1>
 
 <%= @tour.tour_description %>
+<div>Dog-Friendly:
+<%=@tour.dog_friendly %></div>
+<div>Family-Friendly:
+<%=@tour.family_friendly %></div>
+
+
 <%= link_to "Rate Tour", new_tour_review_path(@tour) %>
 
 <div><%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@tour.latitude}%2C#{@tour.longitude}" %></div>
