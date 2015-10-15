@@ -1,0 +1,22 @@
+<h1><%= @tour.tour_name %></h1>
+
+<%= @tour.tour_description %>
+<div>Dog-Friendly:
+<%=@tour.dog_friendly %></div>
+<div>Family-Friendly:
+<%=@tour.family_friendly %></div>
+
+
+<%= link_to "Rate Tour", new_tour_review_path(@tour) %>
+
+<div><%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@tour.latitude}%2C#{@tour.longitude}" %></div>
+
+<h1> Reviews </h1>
+<% @reviews.each do |review| %>
+<div><%= review.title %></div>
+<% review.rating.times do %>
+<%= image_tag "http://findicons.com/files/icons/2166/oxygen/48/rating.png"%>
+<% end %>
+<% end %>
+
+

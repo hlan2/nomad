@@ -1,0 +1,16 @@
+<h1>Your Mailbox </h1>
+
+<% @messages.each do |x| %>
+	<% if(x.recipient_id == current_user.id)%>
+		<div>
+			<%= x.message%> Sent from user: <%=x.sender.firstname %>
+		</div>
+	<%end%>
+<%end%>
+
+<div class="link">
+	<%= link_to "Back to Tours", tours_path%>
+</div>
+
+
+

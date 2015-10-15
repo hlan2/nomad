@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="css/users.css">
+
+<div class="body">
+<h1> <%= @user.firstname %>'s Profile </h1>
+
+Name: <%= current_user.firstname%> <%=current_user.lastname%>
+</div>
+
+
+<div class="container">
+<h1>All Users</h1>
+
+<% @users.each do |user|%>
+<div><%= user.firstname%> <%=user.lastname%>  <%=link_to "<Message User>", new_user_received_message_path(user)%></div> 
+</div>
+<%end%>
+
+
+
