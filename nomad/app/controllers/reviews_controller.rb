@@ -33,6 +33,6 @@ class ReviewsController < ApplicationController
   end
 
   def load_tour
-    @tour = Tour.find_by(params[:tour_id])
+    @tour = Tour.find_by(params[:tour_id, :city, :dog_friendly, :family_friendly])
   end
 end
