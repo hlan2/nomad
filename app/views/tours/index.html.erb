@@ -1,4 +1,9 @@
+<div class="container">
 <div class="footer">
+
+<div class="maxsize">
+<%= image_tag("nomadlogo.png", size: "200x125") %>
+</div>
 	<h1>List of Available Tours</h1>
 
 	<%= form_tag(tours_path, :method => "get", id: "search-form") do %>
@@ -17,4 +22,5 @@
 	<% else %>
 	  <p>There are no tours containing the term(s) <%= params[:search] %>.</p>
 	<% end %>
+</div>
 </div>
