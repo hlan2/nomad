@@ -1,0 +1,167 @@
+Made changes to Stylesheets in Application
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#	new file:   .DS_Store
+#	new file:   nomad/.gitignore
+#	new file:   nomad/Gemfile
+#	new file:   nomad/Gemfile.lock
+#	new file:   nomad/README.rdoc
+#	new file:   nomad/Rakefile
+#	new file:   nomad/app/assets/images/.keep
+#	new file:   nomad/app/assets/javascripts/application.js
+#	new file:   nomad/app/assets/javascripts/latitudeandlongitude.coffee
+#	new file:   nomad/app/assets/javascripts/messages.coffee
+#	new file:   nomad/app/assets/javascripts/received_messages.coffee
+#	new file:   nomad/app/assets/javascripts/reviews.coffee
+#	new file:   nomad/app/assets/javascripts/sessions.coffee
+#	new file:   nomad/app/assets/javascripts/tours.coffee
+#	new file:   nomad/app/assets/javascripts/users.coffee
+#	new file:   nomad/app/assets/stylesheets/application.css
+#	new file:   nomad/app/assets/stylesheets/latitudeandlongitude.scss
+#	new file:   nomad/app/assets/stylesheets/messages.scss
+#	new file:   nomad/app/assets/stylesheets/received_messages.scss
+#	new file:   nomad/app/assets/stylesheets/reviews.scss
+#	new file:   nomad/app/assets/stylesheets/sessions.scss
+#	new file:   nomad/app/assets/stylesheets/tours.scss
+#	new file:   nomad/app/assets/stylesheets/users.scss
+#	new file:   nomad/app/controllers/application_controller.rb
+#	new file:   nomad/app/controllers/concerns/.keep
+#	new file:   nomad/app/controllers/latitudeandlongitude_controller.rb
+#	new file:   nomad/app/controllers/messages_controller.rb
+#	new file:   nomad/app/controllers/received_messages_controller.rb
+#	new file:   nomad/app/controllers/reviews_controller.rb
+#	new file:   nomad/app/controllers/sessions_controller.rb
+#	new file:   nomad/app/controllers/tours_controller.rb
+#	new file:   nomad/app/controllers/users_controller.rb
+#	new file:   nomad/app/helpers/application_helper.rb
+#	new file:   nomad/app/helpers/latitudeandlongitude_helper.rb
+#	new file:   nomad/app/helpers/messages_helper.rb
+#	new file:   nomad/app/helpers/received_messages_helper.rb
+#	new file:   nomad/app/helpers/reviews_helper.rb
+#	new file:   nomad/app/helpers/sessions_helper.rb
+#	new file:   nomad/app/helpers/tours_helper.rb
+#	new file:   nomad/app/helpers/users_helper.rb
+#	new file:   nomad/app/mailers/.keep
+#	new file:   nomad/app/mailers/application_mailer.rb
+#	new file:   nomad/app/mailers/user_mailer.rb
+#	new file:   nomad/app/models/.keep
+#	new file:   nomad/app/models/concerns/.keep
+#	new file:   nomad/app/models/conversation.rb
+#	new file:   nomad/app/models/latitudeandlongitude.rb
+#	new file:   nomad/app/models/message.rb
+#	new file:   nomad/app/models/review.rb
+#	new file:   nomad/app/models/tour.rb
+#	new file:   nomad/app/models/user.rb
+#	new file:   nomad/app/views/latitudeandlongitude/index.html.erb
+#	new file:   nomad/app/views/layouts/application.html.erb
+#	new file:   nomad/app/views/layouts/mailer.html.erb
+#	new file:   nomad/app/views/layouts/mailer.text.erb
+#	new file:   nomad/app/views/messages/index.html.erb
+#	new file:   nomad/app/views/received_messages/new.html.erb
+#	new file:   nomad/app/views/reviews/_review.html.erb
+#	new file:   nomad/app/views/reviews/index.html.erb
+#	new file:   nomad/app/views/reviews/new.html.erb
+#	new file:   nomad/app/views/reviews/show.html.erb
+#	new file:   nomad/app/views/sessions/new.html.erb
+#	new file:   nomad/app/views/tours/_tour.html.erb
+#	new file:   nomad/app/views/tours/index.html.erb
+#	new file:   nomad/app/views/tours/new.html.erb
+#	new file:   nomad/app/views/tours/show.html.erb
+#	new file:   nomad/app/views/user_mailer/welcome_email.html.erb
+#	new file:   nomad/app/views/users/_user.html.erb
+#	new file:   nomad/app/views/users/index.html.erb
+#	new file:   nomad/app/views/users/new.html.erb
+#	new file:   nomad/app/views/users/show.html.erb
+#	new file:   nomad/bin/bundle
+#	new file:   nomad/bin/rails
+#	new file:   nomad/bin/rake
+#	new file:   nomad/bin/setup
+#	new file:   nomad/bin/spring
+#	new file:   nomad/config.ru
+#	new file:   nomad/config/application.rb
+#	new file:   nomad/config/boot.rb
+#	new file:   nomad/config/database.yml
+#	new file:   nomad/config/environment.rb
+#	new file:   nomad/config/environments/development.rb
+#	new file:   nomad/config/environments/production.rb
+#	new file:   nomad/config/environments/test.rb
+#	new file:   nomad/config/initializers/assets.rb
+#	new file:   nomad/config/initializers/backtrace_silencers.rb
+#	new file:   nomad/config/initializers/cookies_serializer.rb
+#	new file:   nomad/config/initializers/filter_parameter_logging.rb
+#	new file:   nomad/config/initializers/inflections.rb
+#	new file:   nomad/config/initializers/mime_types.rb
+#	new file:   nomad/config/initializers/session_store.rb
+#	new file:   nomad/config/initializers/wrap_parameters.rb
+#	new file:   nomad/config/locales/en.yml
+#	new file:   nomad/config/routes.rb
+#	new file:   nomad/config/secrets.yml
+#	new file:   nomad/db/.DS_Store
+#	new file:   nomad/db/migrate/.DS_Store
+#	new file:   nomad/db/migrate/20151006191655_create_messages.rb
+#	new file:   nomad/db/migrate/20151006192053_create_reviews.rb
+#	new file:   nomad/db/migrate/20151006192344_create_tours.rb
+#	new file:   nomad/db/migrate/20151006192648_create_users.rb
+#	new file:   nomad/db/migrate/20151007222756_add_ratings_to_reviews.rb
+#	new file:   nomad/db/migrate/20151007224109_change_updated_up_to_updated_at.rb
+#	new file:   nomad/db/migrate/20151010195507_add_latitude_and_longitude_to_model.rb
+#	new file:   nomad/db/migrate/20151014155058_add_tour_options_to_tours.rb
+#	new file:   nomad/db/migrate/20151014200137_add_city_to_tours.rb
+#	new file:   nomad/db/schema.rb
+#	new file:   nomad/db/seeds.rb
+#	new file:   nomad/lib/assets/.keep
+#	new file:   nomad/lib/assets/star.ai
+#	new file:   nomad/lib/assets/star.png
+#	new file:   nomad/lib/tasks/.keep
+#	new file:   nomad/log/.keep
+#	new file:   nomad/public/404.html
+#	new file:   nomad/public/422.html
+#	new file:   nomad/public/500.html
+#	new file:   nomad/public/favicon.ico
+#	new file:   nomad/public/robots.txt
+#	new file:   nomad/test/controllers/.keep
+#	new file:   nomad/test/controllers/latitudeandlongitude_controller_test.rb
+#	new file:   nomad/test/controllers/messages_controller_test.rb
+#	new file:   nomad/test/controllers/received_messages_controller_test.rb
+#	new file:   nomad/test/controllers/reviews_controller_test.rb
+#	new file:   nomad/test/controllers/sessions_controller_test.rb
+#	new file:   nomad/test/controllers/tours_controller_test.rb
+#	new file:   nomad/test/controllers/users_controller_test.rb
+#	new file:   nomad/test/fixtures/.keep
+#	new file:   nomad/test/fixtures/conversations.yml
+#	new file:   nomad/test/fixtures/latitudeandlongitudes.yml
+#	new file:   nomad/test/fixtures/messages.yml
+#	new file:   nomad/test/fixtures/reviews.yml
+#	new file:   nomad/test/fixtures/tours.yml
+#	new file:   nomad/test/fixtures/users.yml
+#	new file:   nomad/test/helpers/.keep
+#	new file:   nomad/test/integration/.keep
+#	new file:   nomad/test/mailers/.keep
+#	new file:   nomad/test/mailers/previews/user_mailer_preview.rb
+#	new file:   nomad/test/mailers/user_mailer_test.rb
+#	new file:   nomad/test/models/.keep
+#	new file:   nomad/test/models/conversation_test.rb
+#	new file:   nomad/test/models/latitudeandlongitude_test.rb
+#	new file:   nomad/test/models/message_test.rb
+#	new file:   nomad/test/models/review_test.rb
+#	new file:   nomad/test/models/tour_test.rb
+#	new file:   nomad/test/models/user_test.rb
+#	new file:   nomad/test/test_helper.rb
+#	new file:   nomad/vendor/assets/javascripts/.keep
+#	new file:   nomad/vendor/assets/stylesheets/.keep
+#
+# Untracked files:
+#	.index.html.swpg
+
+
+
+
+
+
+git commit -m "Made changes to Style sheets in Application file"
+git push origin master
+quit
+#
