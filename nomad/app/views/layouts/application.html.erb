@@ -5,11 +5,17 @@
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
+
+	  <link rel="stylesheet" href="SlickNav/slicknav.css" />
+	  <script src="SlickNav/jquery.slicknav.min.js"></script>
+
 	</head>
 
 	<body>
-		
+
 			<header>
+
+
 			<% if current_user %>
 				<strong>NOMAD - A Tourism App </strong>
 				Signed in as <%= current_user.email %> |
@@ -23,10 +29,10 @@
 				<%= link_to "Login", login_path %> |
 				<%= link_to "Signup", new_user_path %> |
 			<%end%>
-
 			</header>
-			
 		<%= yield %>
+
+
 
 	</body>
 </html>
