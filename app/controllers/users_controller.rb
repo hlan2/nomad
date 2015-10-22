@@ -1,11 +1,11 @@
 class UsersController < ApplicationController
-	
+
 	def index
 		@user = current_user
   		@users = User.all
 	end
 
-	def show 
+	def show
 		@user = User.find(params[:id])
 	end
 
@@ -18,7 +18,7 @@ class UsersController < ApplicationController
 		end
 	end
 
-	
+
 	def create
 		@user = User.create(user_params)
 		if @user
@@ -36,4 +36,3 @@ class UsersController < ApplicationController
 		params.require(:user).permit(:firstname, :lastname, :email, :password, :password_confirmation)
 	end
 end
-	
